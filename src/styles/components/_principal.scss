@@ -1,0 +1,73 @@
+body{
+    background-color: $color1;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+    
+    @include pc() {
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+.clima__container, .form__container{
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    box-shadow: 1px 1px 1px white;
+    width: 80%;
+    margin: 1rem 0;
+    
+
+    @include pc() {
+        height: 50%;
+        flex: 0 0 40%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.form__input{
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 1px solid $color1;
+    outline: none;
+}
+.clima__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__boton{
+    background-color: $color3;
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 0;
+}
+
+.clima__imagen{
+    width: 30%;
+    object-fit: cover;
+}
+
+.clima__temp{
+    font-size: 2rem;
+}
