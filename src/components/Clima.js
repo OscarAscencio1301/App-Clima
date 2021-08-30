@@ -4,7 +4,7 @@ import { useFetch } from '../hooks/useFetch'
 
 export const Clima = () => {
     const { ciudad, pais } = useSelector(state => state.clima)
-    const { data, loading } = useFetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=09c0528147b9bd01bf9d3f627f526dbb`)
+    const { data, loading } = useFetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=09c0528147b9bd01bf9d3f627f526dbb`)
     const { temp } = !!data && data.main
 
     return (
