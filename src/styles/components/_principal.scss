@@ -9,15 +9,17 @@ body{
     align-items: center;
     gap: 1rem;
     height: 100vh;
+    padding: 0 2rem;
+    // width: 80%;
     
     @include pc() {
-        justify-content: center;
         flex-direction: row;
+        justify-content: center;
     }
 }
 
 .clima__container, .form__container{
-    flex: 1;
+    flex:  0 0 50%;
     background-color: white;
     border-radius: 20px;
     padding: 2rem 3rem;
